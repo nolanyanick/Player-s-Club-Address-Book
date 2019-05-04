@@ -1,0 +1,39 @@
+CREATE DATABASE players;
+
+USE players;
+CREATE TABLE master_name (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    date_added DATETIME,
+    date_modified DATETIME,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+CREATE TABLE email (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    master_id INT NOT NULL,
+    date_added DATETIME,
+    date_modified DATETIME,
+    email VARCHAR(150),
+    type_email ENUM('work', 'home', 'other')
+);
+
+CREATE TABLE telephone (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    master_id INT NOT NULL,
+    date_added DATETIME,
+    date_modified DATETIME,
+    phone_number VARCHAR(25),
+    type_phone ENUM('work', 'home', 'other')
+);
+
+CREATE TABLE stats (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    master_id INT NOT NULL,
+    date_added DATETIME,
+    date_modified DATETIME,
+    handicap INT,
+    best_game INT,
+    holes_in_one INT,
+    fav_course VARCHAR(75)
+);

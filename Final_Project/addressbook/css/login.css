@@ -1,0 +1,156 @@
+h1 {display: flex; justify-content: center; text-align:center; font-family:Cambria; color :darkgreen; padding: 15px; font-variant: small-caps;}
+h2 {text-align:left; font-family:Cambria; color:darkgreen;}
+h3, h4  {text-align:left; font-family:Cambria;color:#33a457; font-size:14pt;}
+h5, h6 {text-align:left; font-family:Cambria;color:black; font-size:12pt;}
+strong { text-align:center; font-family:Cambria; font-size:18pt; color :whitesmoke;}
+ol {text-align:left; font-family:Cambria; font-size:14pt; color:black; }
+li {text-align:left; font-family:Cambria; font-size:12pt; color:black; text-shadow: black 1px 1px 5px; list-style-type: none;}	
+ul {text-align:left; font-family:Cambria; font-size:12pt; color:black;}
+
+a:link {color:navajowhite; text-decoration: underline;}
+a:visited {color:navajowhite ; text-decoration: underline; }
+a:hover {color: white; background-color: peru ; text-decoration: none; text-shadow: none;}
+table {text-align:left; font-family:Cambria; color:black; border:5px solid #33a457 ; border-right: 2px solid #33a457 ; border-top: 2px solid #33a457 ; border-bottom: 2px solid #33a457; }
+th {font-size:14pt; font-weight:bold; font-family:Cambria; background-color:#33a457 ; color:white;}
+td {height:40px; font-family:Cambria; font-size:12pt; color:black; border-right: 2px solid #33a457; border-bottom: 2px solid #33a457 ;}
+hr { height:4px; color:#33a457 ; background-color:#33a457; }
+blockquote {font-family:Cambria, sans-serif;}
+
+body {
+   height: 100%;
+   background:url('../images/coast.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+form,fieldset{
+    width:100%;
+    padding: 20px;
+    padding-left: 0px;
+}
+
+img {
+    border:none;
+}
+
+footer {
+   background-color: rgba(255,255,255,0.1);
+   opacity: 0.5;
+   color: #ffffff;
+   text-align: center;
+   font-size: 12px;
+   padding:15px;
+   padding-left: 0;
+   padding-right: 0;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   left:0;
+}
+
+.center {
+    font-variant: small-caps;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:250px;
+    background-color: rgba(255,255,255,0.9);
+    /* border: 2px solid gray; */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.50)
+}
+
+button {
+    font-variant: small-caps;
+    background-color: darkgreen; 
+    border: none; 
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button:hover {
+    background-color: gray;
+    opacity: 1;    
+}
+
+
+[class *= "col-"] {
+    /* float: left; */
+    padding: 0;
+
+    /* delete later */
+    /* border: 1px solid red; */
+}
+
+/* For mobile phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For tablets */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width:8.33%;}
+    .col-s-2 {width:16.66%;}
+    .col-s-3 {width:25%;}
+    .col-s-4 {width:33.33%;}
+    .col-s-5 {width:41.66%;}
+    .col-s-6 {width:50%;}
+    .col-s-7 {width:58.33%;}
+    .col-s-8 {width:66.66%;}
+    .col-s-9 {width:75%;}
+    .col-s-10 {width:83.33%;}
+    .col-s-11 {width:91.66%;}
+    .col-s-12 {width:100%;}
+    .menu{display: flex; padding-bottom:30px;}
+    .subMenu{
+        float: left;
+        padding:40px;
+        text-align: left;
+        border:none;
+    }
+    #firstLinks {
+        border-right: solid darkgreen 1.5px;
+        border-bottom: none;
+    }
+    #secondLinks {
+        border-left: solid darkgreen 1.5px;
+        border-top: none;
+    }
+    .content {
+        text-align: none;
+        
+    }
+    .listElement {
+        text-align: left;
+        padding-left: 40px;
+    }
+    .link {
+        margin-bottom: 0px;
+    }
+
+/* For desktop */
+@media only screen and (min-width: 768px) {
+    .col-1 {width:8.33%;}
+    .col-2 {width:16.66%;}
+    .col-3 {width:25%;}
+    .col-4 {width:33.33%;}
+    .col-5 {width:41.66%;}
+    .col-6 {width:50%;}
+    .col-7 {width:58.33%;}
+    .col-8 {width:66.66%;}
+    .col-9 {width:75%;}
+    .col-10 {width:83.33%;}
+    .col-11 {width:91.66%;}
+    .col-12 {width:100%;}
+    #firstLinks {
+        border-right: solid darkgreen 1.5px;
+    }
+    #secondLinks {
+        border-left: solid darkgreen 1.5px;
+    }
+}}

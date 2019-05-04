@@ -1,0 +1,212 @@
+﻿* {
+    box-sizing: border-box;
+}
+h1 {
+    opacity: 1;
+    text-align:center; 
+    font-family: Cambria; 
+    color :whitesmoke; 
+    font-size: 2em;
+    background-color: darkgreen;
+    padding: 0px;
+    font-variant: small-caps;
+    margin-top:0px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.24);
+}
+article {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.50)
+}
+.subHeader { 
+    text-align:center; 
+    font-family:Cambria; 
+    font-size:20pt; 
+    color :darkgreen;
+}
+
+li {
+    text-align:center; 
+    font-family:Cambria; 
+    font-size:14pt; color:black; 
+    list-style-type: none; 
+    margin-bottom: 5px;
+}
+
+ul {
+    text-align:center; 
+    font-family:Cambria; 
+    font-size:12pt; 
+    list-style-type:none; 
+    padding:0;
+}
+
+a:link {
+    color:darkslategray; 
+    text-decoration: underline;
+    padding: 2px;
+   
+}
+a:visited {color:rgb(80, 78, 78) ;}
+a:hover {color: peru; background-color:  rgba(255,255,255,0.50); text-decoration: none;}
+
+body {
+    height: 100%;
+    background:url('../images/grass.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+form,fieldset {
+    width:100%;
+}
+
+img {border:none;}
+
+footer {
+    background-color: darkgreen;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding:15px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+section {    
+    display: inline-block;
+    margin-top: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+#firstLinks {
+    border-bottom:darkgreen solid 1.5px;
+}
+
+#secondLinks{
+    border-top:darkgreen solid 1.5px ;
+}
+
+/* For mobile phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For tablets */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width:8.33%;}
+    .col-s-2 {width:16.66%;}
+    .col-s-3 {width:25%;}
+    .col-s-4 {width:33.33%;}
+    .col-s-5 {width:41.66%;}
+    .col-s-6 {width:50%;}
+    .col-s-7 {width:58.33%;}
+    .col-s-8 {width:66.66%;}
+    .col-s-9 {width:75%;}
+    .col-s-10 {width:83.33%;}
+    .col-s-11 {width:91.66%;}
+    .col-s-12 {width:100%;}
+    .menu{display: flex; padding-bottom:30px;}
+    .subMenu{
+        float: left;
+        padding:40px;
+        text-align: left;
+        border:none;
+    }
+    #firstLinks {
+        border-right: solid darkgreen 1.5px;
+        border-bottom: none;
+    }
+    #secondLinks {
+        border-left: solid darkgreen 1.5px;
+        border-top: none;
+    }
+    .content {
+        text-align: none;        
+    }
+    .listElement {
+        text-align: left;
+        padding-left: 40px;
+    }
+    .link {
+        margin-bottom: 0px;
+    }
+}
+/* For desktop */
+@media only screen and (min-width: 768px) {
+    .col-1 {width:8.33%;}
+    .col-2 {width:16.66%;}
+    .col-3 {width:25%;}
+    .col-4 {width:33.33%;}
+    .col-5 {width:41.66%;}
+    .col-6 {width:50%;}
+    .col-7 {width:58.33%;}
+    .col-8 {width:66.66%;}
+    .col-9 {width:75%;}
+    .col-10 {width:83.33%;}
+    .col-11 {width:91.66%;}
+    .col-12 {width:100%;}
+    #firstLinks {
+        border-right: solid darkgreen 1.5px;
+    }
+    #secondLinks {
+        border-left: solid darkgreen 1.5px;
+    }
+    .content {
+        text-align: none;        
+    }
+    .listElement {
+        text-align: left;
+        padding-left: 40px;
+    }
+    .link {
+        margin-bottom: 0px;
+    }
+    .menu{display: flex; padding-bottom:30px;}
+    .subMenu{
+        float: left;
+        padding:40px;
+        text-align: left;
+        border:none;
+    }
+    footer{
+        position: fixed;
+        left:0;
+        bottom:0;
+        padding:15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-height: 608px) and (min-width:786px) {
+    footer {
+        position: relative;
+        left:0px;
+        padding:15px;
+    }
+}
+
+button {
+    font-variant: small-caps;
+    background-color: darkgreen; 
+    border: none; 
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left:5px;
+ }
+ 
+ button:hover {
+    background-color: gray;
+    opacity: 1;    
+}
